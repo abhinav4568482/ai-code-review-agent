@@ -2,13 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  output: 'standalone',
   
-  // For Netlify deployment
-  experimental: {
-    // This enables proper Netlify support
-  },
-
+  // Export as static for Netlify
+  output: 'export',
+  
   // Ensure proper headers for deployment
   async headers() {
     return [
@@ -38,3 +35,5 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
+
