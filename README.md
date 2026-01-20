@@ -122,6 +122,26 @@ curl -X POST http://localhost:8000/review \
 
 Coming soon: [Deploy URL]
 
+## Deployment
+
+### Frontend Deployment to Netlify
+See [NETLIFY_DEPLOYMENT.md](./NETLIFY_DEPLOYMENT.md) for detailed instructions on deploying to Netlify.
+
+**Quick Start:**
+1. Push code to GitHub (already done ✅)
+2. Connect GitHub repo to Netlify
+3. Set `NEXT_PUBLIC_API_URL` environment variable
+4. Deploy
+
+### Backend Deployment
+Deploy to one of these platforms:
+- Render.com (recommended for FastAPI)
+- Railway.app
+- Heroku
+- PythonAnywhere
+
+Once deployed, update the frontend's `NEXT_PUBLIC_API_URL` to point to your backend.
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
