@@ -1,6 +1,7 @@
 [build]
+  base = "frontend"
   command = "npm run build"
-  publish = ".next"
+  publish = "frontend/.next"
   node_version = "18.17.0"
 
 [dev]
